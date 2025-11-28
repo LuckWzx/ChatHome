@@ -24,7 +24,7 @@ GoChat 是一个基于 Go 语言实现的轻量级实时聊天室应用，采用
 
 1. 克隆仓库:
 bash
-git clone https://github.com/yourusername/gochat.git
+git clone [https://github.com/LuckWzx/ChatHome.git]
 cd gochat
 
 2. 启动服务器:
