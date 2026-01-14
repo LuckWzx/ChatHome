@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chatroom-server:
+    build: .
+    container_name: chatroom-server
+    ports:
+      - "8888:8888"
+    restart: unless-stopped
+    networks:
+      - chatroom-network
+
+networks:
+  chatroom-network:
+    driver: bridge
+
