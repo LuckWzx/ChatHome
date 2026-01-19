@@ -21,8 +21,6 @@ func main() {
 			flag = false
 		}
 	}
-	//fmt.Print("请输入您的网名: ")
-	//username := utils.ReadLine()
 
 	// 连接到服务器
 	conn, err := net.Dial("tcp", "127.0.0.1:8888")
@@ -78,19 +76,3 @@ func receiveMessages(conn net.Conn) {
 		fmt.Print(utils.TrimNewLine(message) + "\n")
 	}
 }
-
-// readLine 从标准输入读取一行
-//func readLine() string {
-//	reader := bufio.NewReader(os.Stdin)
-//	line, err := reader.ReadString('\n')
-//	if err != nil {
-//		fmt.Println("Error reading input:", err)
-//		return ""
-//	}
-//	return strings.TrimSpace(line)
-//}
-
-// trimNewLine 去掉字符串末尾的换行符
-//func trimNewLine(s string) string {
-//	return strings.TrimRight(s, "\n")
-//}
